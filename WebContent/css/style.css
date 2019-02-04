@@ -1,0 +1,428 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	font-family: 'Roboto', sans-serif; 
+}
+
+.header {
+	position: static;
+}
+
+.top-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0px;
+}
+
+.top-header-left {
+	display: inline;
+}
+
+.top-header-left img {
+	padding: 10px 0px;
+	padding-left: 30px;
+	width: 306px;
+	height: 76px;
+}
+
+.top-header-right {
+	padding-right: 30px;
+}
+
+.top-header-right a {
+	text-decoration: none;
+	color: #3498db;
+	text-color: #3498db;
+}
+
+.top-header-right ul {
+	list-style-type: none;
+}
+
+.top-header-right ul li {
+	display: inline;
+	padding: 0px 10px;
+}
+
+.navigation {
+	float: left;
+	width: 100%;
+}
+
+.navigation ul {
+	list-style-type: none;
+	background-color: #3498db;
+	padding: 18px 0px;
+}
+
+.navigation ul li {
+	display: inline;
+}
+
+.navigation ul li:hover {
+	background-color: #2979af;
+	cursor: pointer;
+	padding: 18px 0px;
+}
+
+.navigation a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	padding: 18px 30px;
+}
+
+.header i {
+	color: #2980b9;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	color: #e0e0e0;
+	text-transform: uppercase;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #c7c4c4;
+	min-width: 127px;
+	margin-top: 18px;
+	z-index: 2;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-size: 14px;
+}
+
+.dropdown-content a:hover {
+	background-color: #d8d8d8;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.background-image {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	padding-bottom:5px;
+}
+
+.error-image {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.background-image img {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.background-image:after {
+	position: absolute;
+	content: attr(data-text);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #2980b9;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	z-index: 101;
+}
+
+.content1 {
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 100% ;
+	margin: 0px auto;
+}
+
+.content1 h4 {
+	color: #3498db;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin: 20px auto;
+}
+
+.content1 h3 {
+	color: #3498db;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.content {
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 100% ;
+	margin: 0px auto;
+	min-height: 60vh;
+
+}
+
+.content:before {
+	position: absolute;
+	content: "";
+	background-image: url("images\slider1.jpg");
+}
+
+.content h3 {
+	color: #666;
+	text-align: center;
+	margin: 30px 0px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.content h4 {
+	color: #3498db;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin: 20px auto;
+}
+
+.content p {
+	color: #666;
+	text-align: center;
+	margin: 30px 0px;
+	letter-spacing: 0.05em;
+}
+
+.content a{
+	text-decoration: none;
+	color: #3498db;
+	font-weight: bold;
+}
+
+
+.image-container {
+	display: flex;
+	
+}
+
+.image {
+	padding: 20px;
+	text-align: center;
+}
+
+.image img {
+	height: 190px;
+	width: 190px;
+	border: 2px solid #666;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.image h3 {
+	width: 50%;
+	margin: 20px auto;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.visit-us {
+	text-align: center;
+}
+
+.contact-us {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.contact-info {
+	margin: 0px auto;
+	width: 80%;
+	text-align: center;
+}
+
+.contact-info h3 {
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.60em;
+}
+
+.contact-us .icons ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+.contact-us p {
+	color: #666;
+}
+
+.contact-us .icons i {
+	color: #2980b9;
+	font-size: 18px;
+}
+
+.contact-info table {
+	margin: 50px auto;
+}
+
+.contact-info table td {
+	color: #666;
+	text-transform: uppercase;
+}
+
+.footer {
+	float: left;
+	position: static;
+	bottom: 0;
+	background-color: #000000;
+	color: #ffffff;
+	width: 100%;
+	text-align: center;
+}
+
+.footer p {
+	font-size: 14px;
+}
+
+.table th,td {
+	text-align: center;
+	padding: 8px;
+	color: #666;
+}
+
+.table tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+.table {
+	table-layout: auto;
+	border-collapse: collapse;
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	margin-bottom: 5%;
+}
+
+.table1 th,td {
+	text-align: center;
+	padding: 8px;
+}
+
+.table1 tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+.table1 {
+	table-layout: auto;
+	border-collapse: collapse;
+	width: 80%;
+	text-align: center;
+	border: 2px solid #C7C4C4;
+	margin-left: 10%;
+	margin-bottom: 3%;
+}
+
+.form input[type="submit"] {
+	background: #3498db;
+	border-color: transparent;
+	color: #fff;
+	float: center;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+	background: #17c;
+}
+
+/* Buttons' focus effect */
+.form input[type="submit"]:focus {
+	border-color: #05a;
+}
+
+/*Tooltip section added from here */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+	width:100%
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+/*  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; To the left of the tooltip
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+} */
+
+.button_giving {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 700px;
+    margin-bottom: 50px
+}
+
+.button_redeem {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 400px;
+    margin-bottom: 50px
+}
+
+
+
+
